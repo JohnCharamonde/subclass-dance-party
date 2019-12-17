@@ -33,6 +33,7 @@ body, a:link, a:visited, a:active{
   border-top: 20px solid yellow;
   border-left: 20px solid yellow;
   border-bottom: 20px solid yellow;
+  position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -42,17 +43,22 @@ body, a:link, a:visited, a:active{
   animation-iteration-count: infinite; */
 }
 
-/* @keyframes pacmanAnimation {
+@keyframes pacmanAnimation {
   0%{left: 10px}
   25%{left: 20px}
   50%{left: 30px}
   75%{left: 40px}
   100%{left: 50px}
-} */
+}
 
 .dancer.ghost{
-  background: url('/images/pacman-ghost.png');
+  background: url("images/pacman-ghost.png");
+  background-color:transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px solid transparent;
+  border-radius: 0px;
   position:absolute;
-  width: 20px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
 }
