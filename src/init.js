@@ -33,11 +33,10 @@ $(document).ready(function() {
   });
 
   $('.lineUpButton').on('click', function(event) {
-    for (let i = 0; i < dancers.length; i++) {
-      dancers[i].left = 100;
-      dancers[i].setPosition();
+    for (let i = 0; i < window.dancers.length; i++) {
+      // $(`"${window.dancers[i].node}"`).stop()
+      window.dancers[i].setPosition(window.dancers[i].top, 0);
     }
   });
 });
-
 

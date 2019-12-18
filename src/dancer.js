@@ -11,12 +11,23 @@ Dancer.prototype.step = function () {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-Dancer.prototype.setPosition = function () {
+Dancer.prototype.setPosition = function (top, left) {
   var styleSettings = {
-    top: this.top,
-    left: this.left
+    top: top,
+    left: left
   };
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineUp = function() {
+  this.setPosition(this.top, 0);
+  // var styleSettings = {
+  // animation-timing-function: linear;
+  //   left: 0,
+  // };
+  // this.$node.css(styleSettings);
+};
+
 // Dancer.setPosition();
+
+

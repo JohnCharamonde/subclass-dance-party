@@ -37,22 +37,30 @@ body, a:link, a:visited, a:active{
 }
 
 .pacman{
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
-  border-right: 20px solid transparent;
-  border-top: 20px solid yellow;
-  border-left: 20px solid yellow;
-  border-bottom: 20px solid yellow;
-  border-top-left-radius: 20px;
+  background: url("images/pacman-eating.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  visibility: visible;
+  order: 1px solid transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 1px solid transparent;
+  /* border-right: 1px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent; */
+  /* border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px; */
   animation-name: pacmanAnimation;
   animation-duration: 10s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
+
 
 @keyframes pacmanAnimation{
   0%{left: 0%; visibility: visible}
@@ -61,18 +69,12 @@ body, a:link, a:visited, a:active{
 
 .pacman:hover{
   animation-play-state: paused;
-  border-right: 80px solid transparent;
-  border-top: 80px solid yellow;
-  border-left: 80px solid yellow;
-  border-bottom: 80px solid yellow;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
-  /* animation-name: pacmanHoverAnimation;
+  width: 80px;
+  height: 80px;
+  animation-name: pacmanHoverAnimation;
   animation-iteration-count: infinite;
   animation-duration: 2s;
-  animation-timing-function: linear; */
+  animation-timing-function: linear;
 }
 
 /* @keyframes pacmanHoverAnimation {

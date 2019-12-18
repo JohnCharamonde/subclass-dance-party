@@ -13,3 +13,4 @@ PacMan.prototype.step = function() {
 PacMan.prototype.move = function () {
   setTimeout(this.move.bind(this), this.timeBetweenSteps);
 };
+
